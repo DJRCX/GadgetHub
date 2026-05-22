@@ -13,6 +13,7 @@ import {
   Tag
 } from "lucide-react";
 import { useAuthStore } from "@/store/auth";
+import { useRouter } from "next/navigation";
 
 const navItems = [
   { name: "Dashboard", href: "/admin", icon: LayoutDashboard },
@@ -25,7 +26,14 @@ const navItems = [
 
 export function AdminSidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (o: boolean) => void }) {
   const pathname = usePathname();
+  const router = useRouter();
   const logout = useAuthStore(state => state.logout);
+
+  const handleLogout = () => {
+    logout();
+    setIsOpen(false);
+    router.push("/admin/login");
+  };
 
   return (
     <aside className={cn(
@@ -66,7 +74,7 @@ export function AdminSidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen
 
       <div className="p-4 border-t border-slate-800 shrink-0">
         <button
-          onClick={logout}
+          onClick={handleLogout}
           className="flex items-center gap-3 w-full px-4 py-3 text-sm font-semibold text-slate-300 rounded-md hover:bg-slate-900 hover:text-white transition-colors"
         >
           <LogOut className="w-4 h-4" />

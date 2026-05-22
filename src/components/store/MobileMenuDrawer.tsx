@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useUiStore } from "@/store/ui";
 import { useQuery } from "@tanstack/react-query";
-import { X, Home, Package, Info, Phone, LogIn, Tags, UserRound, LogOut } from "lucide-react";
+import { X, Home, Package, Info, Phone, LogIn, Tags, UserRound, LogOut, Heart } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { categoryRepository } from "@/lib/services/repositories";
@@ -62,6 +62,14 @@ export function MobileMenuDrawer() {
             >
               <Info className="w-5 h-5 text-muted-foreground" />
               My Orders
+            </Link>
+            <Link
+              href="/wishlist"
+              className="flex items-center gap-3 px-3 py-3 text-sm font-medium text-slate-200 hover:text-white hover:bg-white/5 rounded-md transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Heart className="w-5 h-5 text-muted-foreground" />
+              Wishlist
             </Link>
           </nav>
 

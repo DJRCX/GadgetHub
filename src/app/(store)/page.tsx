@@ -18,13 +18,18 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.15 },
+    transition: { staggerChildren: 0.07, delayChildren: 0.08 },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const } },
+  hidden: { opacity: 0, y: 22, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 420, damping: 26, mass: 0.9, bounce: 0.22 },
+  },
 };
 
 const normalizeBannerPosition = (position?: string): Banner["position"] => {
@@ -221,8 +226,8 @@ export default function HomePage() {
             <SkeletonGrid count={6} />
           ) : featuredProducts.length > 0 ? (
             <motion.div variants={containerVariants} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 auto-rows-fr items-stretch">
-              {featuredProducts.map((product, i) => (
-                <motion.div key={product.id} variants={itemVariants} style={{ transitionDelay: `${i * 50}ms` }} className="h-full">
+              {featuredProducts.map((product) => (
+                <motion.div key={product.id} variants={itemVariants} className="h-full">
                   <ProductCard product={product} />
                 </motion.div>
               ))}
@@ -265,8 +270,8 @@ export default function HomePage() {
             <SkeletonGrid count={12} />
           ) : latestProducts.length > 0 ? (
             <motion.div variants={containerVariants} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 auto-rows-fr items-stretch">
-              {latestProducts.map((product, i) => (
-                <motion.div key={product.id} variants={itemVariants} style={{ transitionDelay: `${i * 50}ms` }} className="h-full">
+              {latestProducts.map((product) => (
+                <motion.div key={product.id} variants={itemVariants} className="h-full">
                   <ProductCard product={product} />
                 </motion.div>
               ))}

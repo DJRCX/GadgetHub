@@ -20,13 +20,18 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+    transition: { staggerChildren: 0.06, delayChildren: 0.06 },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] as const } },
+  hidden: { opacity: 0, y: 18, scale: 0.99 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 420, damping: 28, mass: 0.9, bounce: 0.2 },
+  },
 };
 
 export default function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -88,18 +93,18 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-12 lg:gap-16"
+          className="grid grid-cols-1 lg:grid-cols-[minmax(0,640px)_400px] gap-12 lg:gap-16 justify-between"
         >
           {/* Left: Image Stream */}
           <div className="space-y-6">
             {/* Main Image */}
-            <motion.div variants={itemVariants} className="relative aspect-[4/5] bg-white border border-border overflow-hidden">
+            <motion.div variants={itemVariants} className="relative aspect-[6/5] bg-white border border-border overflow-hidden rounded-2xl">
               {product.images[activeImage] && (
                 <Image
                   src={product.images[activeImage]}
                   alt={product.name}
                   fill
-                  className="object-contain p-8 mix-blend-multiply"
+                  className="object-contain p-6 mix-blend-multiply"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                   priority
                 />
@@ -116,7 +121,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                   <button
                     key={idx}
                     onClick={() => setActiveImage(idx)}
-                    className={`relative w-20 h-20 border overflow-hidden flex-shrink-0 bg-white transition-colors ${activeImage === idx ? 'border-primary' : 'border-border hover:border-zinc-400'}`}
+                    className={`relative w-20 h-20 border overflow-hidden flex-shrink-0 bg-white transition-colors rounded-xl ${activeImage === idx ? 'border-primary' : 'border-border hover:border-zinc-400'}`}
                   >
                     <Image src={img} alt={`Thumbnail ${idx}`} fill className="object-contain p-2 mix-blend-multiply" sizes="80px" />
                   </button>

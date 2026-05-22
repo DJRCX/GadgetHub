@@ -48,7 +48,7 @@ export function ProductCard({ product }: ProductCardProps) {
     >
       <Link href={`/products/${product.slug}`} className="absolute inset-0 z-0" />
 
-      <div className="relative aspect-[4/5] bg-white flex items-center justify-center overflow-hidden">
+      <div className="relative aspect-[4/5] bg-white flex items-center justify-center overflow-hidden rounded-2xl">
         {product.images[0] ? (
           <Image
             src={product.images[0]}

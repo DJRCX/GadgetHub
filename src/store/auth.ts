@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { clearAdminCookie } from '@/lib/utils/adminCookie';
 
 interface AuthState {
   isAdmin: boolean;
@@ -20,7 +21,10 @@ export const useAuthStore = create<AuthState>()(
       setAdmin: (isAdmin) => set({ isAdmin }),
       loginCustomer: ({ name, email }) => set({ customerName: name, customerEmail: email }),
       logoutCustomer: () => set({ customerName: null, customerEmail: null }),
-      logout: () => set({ isAdmin: false }),
+      logout: () => {
+        clearAdminCookie();
+        set({ isAdmin: false });
+      },
     }),
     { name: 'auth-v1' }
   )

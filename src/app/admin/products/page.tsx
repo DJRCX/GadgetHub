@@ -88,7 +88,7 @@ export default function AdminProductsPage() {
       salePrice: product.salePrice,
       stock: product.stock,
       categoryId: product.categoryId,
-      images: product.images,
+      images: product.images?.length ? product.images : [""],
       isFeatured: product.isFeatured
     });
     setErrors({});
@@ -98,7 +98,11 @@ export default function AdminProductsPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const validData = productSchema.parse(formData);
+      const sanitized = {
+        ...formData,
+        images: (formData.images || []).map((s) => String(s).trim()).filter(Boolean),
+      };
+      const validData = productSchema.parse(sanitized);
       setErrors({});
       if (editingProduct) {
         updateMutation.mutate({ id: editingProduct.id, payload: validData });
@@ -253,12 +257,55 @@ export default function AdminProductsPage() {
           </div>
 
           <div className="space-y-2">
-            <Label>Image URL *</Label>
-            <Input 
-              value={formData.images?.[0] || ""} 
-              onChange={e => setFormData({...formData, images: [e.target.value]})} 
-              placeholder="https://example.com/image.jpg"
-            />
+            <div className="flex items-center justify-between gap-3">
+              <Label>Image URLs *</Label>
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                onClick={() => setFormData((prev) => ({
+                  ...prev,
+                  images: [...(prev.images?.length ? prev.images : [""]), ""],
+                }))}
+              >
+                <Plus className="w-4 h-4 mr-2" /> Add image
+              </Button>
+            </div>
+
+            <div className="space-y-2">
+              {(formData.images?.length ? formData.images : [""]).map((val, idx) => (
+                <div key={idx} className="flex gap-2">
+                  <Input
+                    value={val || ""}
+                    onChange={(e) =>
+                      setFormData((prev) => {
+                        const images = [...(prev.images?.length ? prev.images : [""])]
+                        images[idx] = e.target.value;
+                        return { ...prev, images };
+                      })
+                    }
+                    placeholder={idx === 0 ? "https://example.com/image.jpg" : "https://example.com/another.jpg"}
+                  />
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="icon"
+                    onClick={() =>
+                      setFormData((prev) => {
+                        const current = prev.images?.length ? prev.images : [""];
+                        const images = current.filter((_, i) => i !== idx);
+                        return { ...prev, images: images.length ? images : [""] };
+                      })
+                    }
+                    aria-label="Remove image"
+                    disabled={(formData.images?.length || 1) <= 1}
+                  >
+                    <Trash2 className="w-4 h-4 text-red-600" />
+                  </Button>
+                </div>
+              ))}
+            </div>
+
             {errors.images && <p className="text-xs text-red-500">{errors.images}</p>}
           </div>
 

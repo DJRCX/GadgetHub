@@ -1,1 +1,1 @@
-There is nothinng to see here. 
+There is nothing to see here.

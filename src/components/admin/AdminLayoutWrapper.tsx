@@ -1,11 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AdminSidebar } from "./AdminSidebar";
 import { AdminHeader } from "./AdminHeader";
+import { useAuthStore } from "@/store/auth";
 
 export function AdminLayoutWrapper({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const logout = useAuthStore((s) => s.logout);
+
+  // Ensure the admin cookie/session doesn't linger after leaving /admin.
+  useEffect(() => {
+    return () => {
+      logout();
+    };
+  }, [logout]);
 
   return (
     <div className="flex h-screen bg-slate-100/80 overflow-hidden">

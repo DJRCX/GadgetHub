@@ -72,7 +72,7 @@ export function FormDrawer({
   );
 
   return (
-    <Sheet open={isSheetOpen} onOpenChange={handleOpenChange}>
+      <Sheet open={isSheetOpen} onOpenChange={handleOpenChange}>
       <SheetContent className="w-full sm:max-w-xl h-full flex flex-col">
         {content}
       </SheetContent>
