@@ -1,0 +1,357 @@
+{
+  "categories": [
+    { "id": "cat-1", "name": "Smartphones", "slug": "smartphones", "icon": "smartphone", "isActive": true },
+    { "id": "cat-2", "name": "Tablets", "slug": "tablets", "icon": "tablet", "isActive": true },
+    { "id": "cat-3", "name": "Smartwatches", "slug": "smartwatches", "icon": "watch", "isActive": true },
+    { "id": "cat-4", "name": "Audio", "slug": "audio", "icon": "headphones", "isActive": true },
+    { "id": "cat-5", "name": "Chargers & Power", "slug": "chargers-power", "icon": "zap", "isActive": true },
+    { "id": "cat-6", "name": "Accessories", "slug": "accessories", "icon": "package", "isActive": true }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Samsung Galaxy S24 Ultra",
+      "slug": "samsung-galaxy-s24-ultra",
+      "description": "Flagship Android smartphone with AI tools, premium display, and all-day battery life for power users.",
+      "price": 155000,
+      "salePrice": 149500,
+      "categoryId": "cat-1",
+      "stock": 12,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+S24+Ultra"],
+      "specs": { "Display": "6.8-inch QHD+ AMOLED", "Chip": "Snapdragon 8 Gen 3", "RAM": "12GB", "Storage": "256GB" },
+      "isFeatured": true,
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-2",
+      "name": "Apple iPhone 15",
+      "slug": "apple-iphone-15",
+      "description": "Reliable flagship iPhone with Dynamic Island, excellent cameras, and a smooth everyday experience.",
+      "price": 115000,
+      "salePrice": 111000,
+      "categoryId": "cat-1",
+      "stock": 10,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=iPhone+15"],
+      "specs": { "Display": "6.1-inch Super Retina XDR", "Chip": "A16 Bionic", "RAM": "6GB", "Storage": "128GB" },
+      "isFeatured": true
+    },
+    {
+      "id": "prod-3",
+      "name": "Xiaomi 14 Pro",
+      "slug": "xiaomi-14-pro",
+      "description": "Premium Xiaomi phone with Leica optics, fast charging, and powerful flagship performance.",
+      "price": 72000,
+      "categoryId": "cat-1",
+      "stock": 14,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+14+Pro"],
+      "specs": { "Display": "6.73-inch LTPO AMOLED", "Chip": "Snapdragon 8 Gen 3", "RAM": "12GB", "Storage": "256GB" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-4",
+      "name": "Realme GT 6",
+      "slug": "realme-gt-6",
+      "description": "Fast, stylish smartphone with high refresh rate screen and dependable battery for daily use.",
+      "price": 38000,
+      "salePrice": 35900,
+      "categoryId": "cat-1",
+      "stock": 18,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Realme+GT+6"],
+      "specs": { "Display": "6.78-inch AMOLED 120Hz", "Chip": "Snapdragon 8s Gen 3", "RAM": "12GB", "Storage": "256GB" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-5",
+      "name": "Apple iPad Pro 12.9 M2",
+      "slug": "apple-ipad-pro-12-9-m2",
+      "description": "Professional-grade tablet with desktop-class performance for creative work, study, and entertainment.",
+      "price": 95000,
+      "categoryId": "cat-2",
+      "stock": 7,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=iPad+Pro+12.9"],
+      "specs": { "Display": "12.9-inch Liquid Retina XDR", "Chip": "Apple M2", "Storage": "128GB", "Connectivity": "Wi‑Fi" },
+      "isFeatured": true
+    },
+    {
+      "id": "prod-6",
+      "name": "Samsung Galaxy Tab S9",
+      "slug": "samsung-galaxy-tab-s9",
+      "description": "Premium Android tablet with AMOLED display and S Pen support for work and creativity.",
+      "price": 62000,
+      "salePrice": 59900,
+      "categoryId": "cat-2",
+      "stock": 9,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Tab+S9"],
+      "specs": { "Display": "11-inch Dynamic AMOLED 2X", "Chip": "Snapdragon 8 Gen 2", "Storage": "128GB", "Battery": "8400mAh" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-7",
+      "name": "Xiaomi Pad 6 Pro",
+      "slug": "xiaomi-pad-6-pro",
+      "description": "Value-packed Android tablet with strong performance and excellent speakers for media and gaming.",
+      "price": 42000,
+      "categoryId": "cat-2",
+      "stock": 11,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+Pad+6+Pro"],
+      "specs": { "Display": "11-inch 144Hz LCD", "Chip": "Snapdragon 8+ Gen 1", "Storage": "256GB", "Battery": "8600mAh" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-8",
+      "name": "Apple Watch Series 9",
+      "slug": "apple-watch-series-9",
+      "description": "Advanced smartwatch with health tracking, premium design, and seamless iPhone integration.",
+      "price": 42000,
+      "salePrice": 39900,
+      "categoryId": "cat-3",
+      "stock": 8,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Watch+Series+9"],
+      "specs": { "Display": "Always-On Retina", "Case": "45mm Aluminum", "Battery": "Up to 18 hours", "Sensors": "ECG, Blood Oxygen" },
+      "isFeatured": true
+    },
+    {
+      "id": "prod-9",
+      "name": "Samsung Galaxy Watch 6 Classic",
+      "slug": "samsung-galaxy-watch-6-classic",
+      "description": "Classic rotating-bezel smartwatch with wellness tracking and polished Galaxy ecosystem support.",
+      "price": 32000,
+      "categoryId": "cat-3",
+      "stock": 13,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Watch+6"],
+      "specs": { "Display": "1.5-inch Super AMOLED", "Case": "47mm Stainless Steel", "Battery": "425mAh", "OS": "Wear OS" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-10",
+      "name": "Xiaomi Watch S3",
+      "slug": "xiaomi-watch-s3",
+      "description": "Slim smartwatch with long battery life and everyday health tracking at an accessible price.",
+      "price": 14000,
+      "salePrice": 12900,
+      "categoryId": "cat-3",
+      "stock": 20,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+Watch+S3"],
+      "specs": { "Display": "1.43-inch AMOLED", "Battery": "Up to 15 days", "Water Resistance": "5ATM", "Sensors": "Heart Rate, SpO2" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-11",
+      "name": "Sony WF-1000XM5 TWS",
+      "slug": "sony-wf-1000xm5-tws",
+      "description": "Flagship true wireless earbuds with outstanding noise cancellation and refined sound quality.",
+      "price": 28000,
+      "salePrice": 26400,
+      "categoryId": "cat-4",
+      "stock": 15,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Sony+WF-1000XM5"],
+      "specs": { "Type": "True Wireless", "ANC": "Yes", "Battery": "Up to 24 hours with case", "Codec": "LDAC" },
+      "isFeatured": true
+    },
+    {
+      "id": "prod-12",
+      "name": "Apple AirPods Pro 2nd Gen",
+      "slug": "apple-airpods-pro-2nd-gen",
+      "description": "Premium TWS earbuds with adaptive transparency, strong ANC, and effortless Apple pairing.",
+      "price": 32000,
+      "categoryId": "cat-4",
+      "stock": 10,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=AirPods+Pro+2"],
+      "specs": { "Type": "True Wireless", "ANC": "Yes", "Battery": "Up to 30 hours with case", "Chip": "H2" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-13",
+      "name": "Samsung Galaxy Buds2 Pro",
+      "slug": "samsung-galaxy-buds2-pro",
+      "description": "Comfortable high-end earbuds with detailed audio and strong integration for Samsung users.",
+      "price": 18000,
+      "salePrice": 16900,
+      "categoryId": "cat-4",
+      "stock": 17,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Buds2+Pro"],
+      "specs": { "Type": "True Wireless", "ANC": "Yes", "Audio": "24-bit Hi-Fi", "Battery": "Up to 18 hours with case" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-14",
+      "name": "JBL Tune 770NC Headphones",
+      "slug": "jbl-tune-770nc-headphones",
+      "description": "Wireless over-ear headphones with adaptive noise canceling and rich bass tuning.",
+      "price": 9500,
+      "categoryId": "cat-4",
+      "stock": 22,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=JBL+Tune+770NC"],
+      "specs": { "Type": "Over-Ear", "ANC": "Yes", "Battery": "Up to 70 hours", "Connection": "Bluetooth 5.3" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-15",
+      "name": "Anker 65W GaN USB-C Charger",
+      "slug": "anker-65w-gan-usb-c-charger",
+      "description": "Compact fast charger with GaN efficiency for phones, tablets, and lightweight laptops.",
+      "price": 4200,
+      "salePrice": 3990,
+      "categoryId": "cat-5",
+      "stock": 35,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Anker+65W+GaN"],
+      "specs": { "Output": "65W", "Ports": "2x USB-C, 1x USB-A", "Technology": "GaN", "Plug": "UK" },
+      "isFeatured": true
+    },
+    {
+      "id": "prod-16",
+      "name": "Xiaomi 33W Power Bank 20000mAh",
+      "slug": "xiaomi-33w-power-bank-20000mah",
+      "description": "High-capacity power bank with fast charging support for multi-device travel use.",
+      "price": 3500,
+      "categoryId": "cat-5",
+      "stock": 28,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+20000mAh"],
+      "specs": { "Capacity": "20000mAh", "Output": "33W", "Ports": "USB-C, 2x USB-A", "Features": "Two-way fast charging" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-17",
+      "name": "Baseus 10000mAh Mini Power Bank",
+      "slug": "baseus-10000mah-mini-power-bank",
+      "description": "Pocket-friendly power bank built for daily top-ups with clean minimalist styling.",
+      "price": 2200,
+      "salePrice": 1990,
+      "categoryId": "cat-5",
+      "stock": 40,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Baseus+Mini+PB"],
+      "specs": { "Capacity": "10000mAh", "Output": "20W", "Ports": "USB-C", "Design": "Mini form factor" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-18",
+      "name": "Spigen Samsung S24 Case",
+      "slug": "spigen-samsung-s24-case",
+      "description": "Protective slim-fit case with reinforced corners for reliable daily drop defense.",
+      "price": 1800,
+      "categoryId": "cat-6",
+      "stock": 55,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Spigen+S24+Case"],
+      "specs": { "Compatibility": "Galaxy S24", "Material": "TPU + Polycarbonate", "Protection": "Air Cushion", "Finish": "Matte Black" },
+      "isLatest": true
+    },
+    {
+      "id": "prod-19",
+      "name": "Baseus USB-C to Lightning Cable 1m",
+      "slug": "baseus-usb-c-to-lightning-cable-1m",
+      "description": "Durable everyday fast-charging cable for Apple devices with reinforced connectors.",
+      "price": 800,
+      "salePrice": 690,
+      "categoryId": "cat-6",
+      "stock": 80,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Baseus+C-L+Cable"],
+      "specs": { "Length": "1 meter", "Connector": "USB-C to Lightning", "Charging": "PD Fast Charging", "Build": "Braided" },
+      "isBestSeller": true
+    },
+    {
+      "id": "prod-20",
+      "name": "Samsung 25W Super Fast Charger",
+      "slug": "samsung-25w-super-fast-charger",
+      "description": "Official Samsung wall charger for safe, efficient USB-C charging on Galaxy devices.",
+      "price": 2500,
+      "categoryId": "cat-6",
+      "stock": 38,
+      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Samsung+25W+Charger"],
+      "specs": { "Output": "25W", "Connector": "USB-C", "Compatibility": "Galaxy phones and tablets", "Type": "Wall Charger" },
+      "isFeatured": true
+    }
+  ],
+  "banners": [
+    {
+      "id": "banner-1",
+      "title": "Upgrade Your Everyday Carry",
+      "subtitle": "Premium phones, smartwatches, earbuds and accessories in one place.",
+      "imageUrl": "https://placehold.co/1200x500/05050F/E8EEFF?text=GadgetHub+Launch",
+      "linkUrl": "/products",
+      "ctaLabel": "Shop All",
+      "position": "hero-main",
+      "sortOrder": 0,
+      "language": "en",
+      "isActive": true
+    },
+    {
+      "id": "banner-2",
+      "title": "Blue Week Gadget Deals",
+      "subtitle": "Save on chargers, power banks and flagship audio picks.",
+      "imageUrl": "https://placehold.co/1200x500/0D1020/38BDF8?text=Blue+Week+Deals",
+      "linkUrl": "/products?filter=featured",
+      "ctaLabel": "View Deals",
+      "position": "hero-main",
+      "sortOrder": 1,
+      "language": "en",
+      "isActive": true
+    },
+    {
+      "id": "banner-3",
+      "title": "Audio Essentials",
+      "subtitle": "TWS, ANC and headphone picks for work and travel.",
+      "imageUrl": "https://placehold.co/400x240/10101E/E8EEFF?text=Audio+Essentials",
+      "linkUrl": "/products?category=cat-4",
+      "ctaLabel": "Shop Audio",
+      "position": "hero-side",
+      "sortOrder": 0,
+      "language": "en",
+      "isActive": true
+    },
+    {
+      "id": "banner-4",
+      "title": "Power Up Anywhere",
+      "subtitle": "Compact chargers and power banks for your daily kit.",
+      "imageUrl": "https://placehold.co/400x240/0EA5E9/04111E?text=Power+Up",
+      "linkUrl": "/products?category=cat-5",
+      "ctaLabel": "Power Up",
+      "position": "hero-side",
+      "sortOrder": 1,
+      "language": "en",
+      "isActive": true
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Admin User",
+      "email": "admin@gadgethub.com",
+      "phone": "+8801700000000",
+      "role": "admin"
+    },
+    {
+      "id": "user-2",
+      "name": "Test Customer",
+      "email": "customer@test.com",
+      "phone": "+8801900000000",
+      "role": "customer"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-12345",
+      "customerName": "Test Customer",
+      "phone": "+8801900000000",
+      "email": "customer@test.com",
+      "address": "House 12, Road 5, Block C",
+      "city": "Dhaka",
+      "postalCode": "1212",
+      "items": [
+        {
+          "productId": "prod-15",
+          "name": "Anker 65W GaN USB-C Charger",
+          "price": 3990,
+          "quantity": 1,
+          "image": "https://placehold.co/400x500/0D1020/E8EEFF?text=Anker+65W+GaN"
+        }
+      ],
+      "subtotal": 3990,
+      "shippingFee": 60,
+      "total": 4050,
+      "paymentMethod": "COD",
+      "status": "Pending",
+      "createdAt": "2026-05-14T10:00:00.000Z",
+      "updatedAt": "2026-05-14T10:00:00.000Z"
+    }
+  ]
+}

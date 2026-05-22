@@ -1,0 +1,25 @@
+
+> temp_app@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 9.1s
+  Running TypeScript ...
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Failed to type check.
+
+./src/components/store/MobileMenuDrawer.tsx:10:11
+Type error: Property 'isMobileMenuOpen' does not exist on type 'UiState'.
+
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mfunction[0m [33mMobileMenuDrawer[0m() {
+[31m[1m>[0m [90m10 |[0m   [36mconst[0m { isMobileMenuOpen, setMobileMenuOpen } = useUiStore();
+  [90m   |[0m           [31m[1m^[0m
+  [90m11 |[0m
+  [90m12 |[0m   [36mif[0m (!isMobileMenuOpen) [36mreturn[0m [36mnull[0m;
+  [90m13 |[0m
+Next.js build worker exited with code: 1 and signal: null
