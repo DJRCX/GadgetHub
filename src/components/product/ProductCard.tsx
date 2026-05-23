@@ -56,6 +56,7 @@ export function ProductCard({ product }: ProductCardProps) {
             fill
             className="object-contain p-6 mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 768px) 50vw, 25vw"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-full bg-zinc-50 flex items-center justify-center text-zinc-400 text-sm">No Image</div>

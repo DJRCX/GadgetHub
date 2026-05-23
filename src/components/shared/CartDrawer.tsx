@@ -2,6 +2,7 @@
 
 import { useCartStore } from "@/store/cart";
 import { useUiStore } from "@/store/ui";
+import { useCheckoutStore } from "@/store/checkout";
 import { Button } from "@/components/ui/button";
 import { formatCurrency } from "@/lib/utils/currency";
 import { Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
@@ -18,11 +19,13 @@ export function CartDrawer() {
   const router = useRouter();
   const { items, removeItem, updateQuantity } = useCartStore();
   const { cartOpen, setCartOpen } = useUiStore();
+  const resetCheckout = useCheckoutStore((s) => s.reset);
   
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleCheckout = () => {
     setCartOpen(false);
+    resetCheckout();
     router.push('/checkout');
   };
 
@@ -57,6 +60,7 @@ export function CartDrawer() {
                         fill
                         className="object-contain p-2"
                         sizes="80px"
+                        loading="lazy"
                       />
                     ) : (
                       <span className="text-xs text-muted-foreground">No img</span>

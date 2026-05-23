@@ -123,7 +123,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                     onClick={() => setActiveImage(idx)}
                     className={`relative w-20 h-20 border overflow-hidden flex-shrink-0 bg-white transition-colors rounded-xl ${activeImage === idx ? 'border-primary' : 'border-border hover:border-zinc-400'}`}
                   >
-                    <Image src={img} alt={`Thumbnail ${idx}`} fill className="object-contain p-2 mix-blend-multiply" sizes="80px" />
+                    <Image src={img} alt={`Thumbnail ${idx}`} fill className="object-contain p-2 mix-blend-multiply" sizes="80px" loading="lazy" />
                   </button>
                 ))}
               </motion.div>

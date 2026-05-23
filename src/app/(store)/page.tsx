@@ -101,35 +101,10 @@ export default function HomePage() {
                     priority
                     sizes="(min-width: 1024px) 70vw, 100vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
                 </div>
-
-                <motion.div
-                  key={heroBanner.id}
-                  initial="hidden"
-                  animate="visible"
-                  variants={containerVariants}
-                  className="relative z-10 flex min-h-[420px] md:min-h-[500px] max-w-2xl flex-col justify-end p-6 md:p-10 lg:p-12 text-white"
-                >
-                  <motion.h1 variants={itemVariants} className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-none">
-                    {heroBanner.title}
-                  </motion.h1>
-                  {heroBanner.subtitle && (
-                    <motion.p variants={itemVariants} className="mt-5 text-base md:text-lg text-white/85 font-medium max-w-xl">
-                      {heroBanner.subtitle}
-                    </motion.p>
-                  )}
-                  {heroBanner.linkUrl && (
-                    <motion.div variants={itemVariants} className="pt-7">
-                      <Link
-                        href={heroBanner.linkUrl}
-                        className={cn(buttonVariants({ size: "lg" }), "font-bold px-5 bg-white text-slate-950 hover:bg-white/90")}
-                      >
-                        {heroBanner.ctaLabel || "Shop Now"} <ArrowRight className="w-5 h-5 ml-2" />
-                      </Link>
-                    </motion.div>
-                  )}
-                </motion.div>
+                {heroBanner.linkUrl && (
+                  <Link href={heroBanner.linkUrl} aria-label={heroBanner.title} className="absolute inset-0 z-10" />
+                )}
 
                 {heroSlides.length > 1 && (
                   <>
@@ -181,15 +156,8 @@ export default function HomePage() {
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, 100vw"
+                        loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-transparent" />
-                      <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                        <h2 className="text-xl font-black tracking-tight">{banner.title}</h2>
-                        {banner.subtitle && <p className="mt-2 text-sm text-white/80 line-clamp-2">{banner.subtitle}</p>}
-                        <span className="mt-4 inline-flex items-center text-sm font-bold">
-                          {banner.ctaLabel || "Explore"} <ArrowRight className="ml-1 w-4 h-4" />
-                        </span>
-                      </div>
                     </Link>
                   ))}
                 </div>

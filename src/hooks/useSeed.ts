@@ -3,7 +3,7 @@ import seedData from '../data/seed.json';
 import { productRepository, categoryRepository, bannerRepository, userRepository, orderRepository } from '../lib/services/repositories';
 import { safeStorage } from '../lib/utils/safeStorage';
 
-const SEED_VERSION = 'v1.4';
+const SEED_VERSION = 'v1.6';
 
 export function useSeed(onSeeded?: () => void) {
   useEffect(() => {

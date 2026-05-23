@@ -21,7 +21,10 @@ const bannerPlacements = [
 const bannerSchema = z.object({
   title: z.string().min(2, "Title is required"),
   subtitle: z.string().optional(),
-  imageUrl: z.string().url("Must be a valid URL"),
+  imageUrl: z.string().refine(
+    (value) => value.startsWith("/") || z.string().url().safeParse(value).success,
+    "Must be a valid URL or local image path"
+  ),
   linkUrl: z.string().optional(),
   ctaLabel: z.string().optional(),
   position: z.enum(["hero-main", "hero-side"]),

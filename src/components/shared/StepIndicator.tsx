@@ -8,7 +8,7 @@ interface StepIndicatorProps {
 
 export function StepIndicator({ steps, currentStep }: StepIndicatorProps) {
   return (
-    <div className="flex items-center justify-between w-full max-w-3xl mx-auto mb-8 relative">
+    <div className="flex items-center justify-between w-full max-w-3xl mx-auto mb-8 relative px-2 overflow-x-auto">
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-muted z-0 rounded-full overflow-hidden">
         <div 
           className="h-full bg-primary transition-all duration-300 ease-in-out" 

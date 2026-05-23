@@ -1,8 +1,7 @@
-import { CartDrawer } from "@/components/shared/CartDrawer";
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { StoreHeader } from "@/components/store/StoreHeader";
 import { StoreFooter } from "@/components/store/StoreFooter";
-import { MobileMenuDrawer } from "@/components/store/MobileMenuDrawer";
+import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
+import { StoreClientComponents } from "@/components/store/StoreClientComponents";
 
 export default function StoreLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,9 +11,8 @@ export default function StoreLayout({ children }: { children: React.ReactNode })
         {children}
       </main>
       <StoreFooter />
-      <CartDrawer />
-      <MobileMenuDrawer />
       <WhatsAppButton />
+      <StoreClientComponents />
     </div>
   );
 }

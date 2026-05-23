@@ -23,6 +23,7 @@ export function ProductCardList({ product }: ProductCardListProps) {
             fill
             className="object-contain p-2 mix-blend-multiply"
             sizes="80px"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-full bg-gray-100 flex items-center justify-center text-xs text-muted-foreground">No Img</div>

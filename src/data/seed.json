@@ -17,7 +17,12 @@
       "salePrice": 149500,
       "categoryId": "cat-1",
       "stock": 12,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+S24+Ultra"],
+      "images": [
+        "https://www.mobiledokan.com/media/samsung-galaxy-s24-ultra-titanium-gray-official-image.webp",
+        "https://www.mobiledokan.com/media/samsung-galaxy-s24-ultra-full-back-camera-side-image.webp",
+        "https://www.mobiledokan.com/media/samsung-galaxy-s24-ultra-back-side-image.webp",
+        "https://www.mobiledokan.com/media/samsung-galaxy-s24-ultra-power-baton-side-image.webp"
+      ],
       "specs": { "Display": "6.8-inch QHD+ AMOLED", "Chip": "Snapdragon 8 Gen 3", "RAM": "12GB", "Storage": "256GB" },
       "isFeatured": true,
       "isBestSeller": true
@@ -31,7 +36,11 @@
       "salePrice": 111000,
       "categoryId": "cat-1",
       "stock": 10,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=iPhone+15"],
+      "images": [
+        "https://assets.gadgetandgear.com/upload/media/iphone-15-plus-128gb-black.jpeg",
+        "https://assets.gadgetandgear.com/upload/media/iphone-15-plus-128gb-black-4.jpeg",
+        "https://assets.gadgetandgear.com/upload/media/iphone-15-plus-128gb-black-5.jpeg"
+      ],
       "specs": { "Display": "6.1-inch Super Retina XDR", "Chip": "A16 Bionic", "RAM": "6GB", "Storage": "128GB" },
       "isFeatured": true
     },
@@ -43,7 +52,13 @@
       "price": 72000,
       "categoryId": "cat-1",
       "stock": 14,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+14+Pro"],
+      "images": [
+        "https://www.mobiledokan.com/media/xiaomi-14-pro-black-official-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-14-pro-full-display-size-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-14-pro-full-back-camera-side-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-14-pro-back-side-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-14-pro-power-button-side-image.webp"
+      ],
       "specs": { "Display": "6.73-inch LTPO AMOLED", "Chip": "Snapdragon 8 Gen 3", "RAM": "12GB", "Storage": "256GB" },
       "isLatest": true
     },
@@ -56,7 +71,13 @@
       "salePrice": 35900,
       "categoryId": "cat-1",
       "stock": 18,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Realme+GT+6"],
+      "images": [
+        "https://www.mobiledokan.com/media/realme-gt-6-razor-green-official-image.webp",
+        "https://www.mobiledokan.com/media/realme-gt-6-full-display-size-image.webp",
+        "https://www.mobiledokan.com/media/realme-gt-6-full-back-camera-side-image.webp",
+        "https://www.mobiledokan.com/media/realme-gt-6-back-side-image.webp",
+        "https://www.mobiledokan.com/media/realme-gt-6-power-baton-side-image.webp"
+      ],
       "specs": { "Display": "6.78-inch AMOLED 120Hz", "Chip": "Snapdragon 8s Gen 3", "RAM": "12GB", "Storage": "256GB" },
       "isBestSeller": true
     },
@@ -68,7 +89,10 @@
       "price": 95000,
       "categoryId": "cat-2",
       "stock": 7,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=iPad+Pro+12.9"],
+      "images": [
+        "https://ddfndelma2gpn.cloudfront.net/color/172/iPad_Pro_12.9_Inch_M2_silver.webp",
+        "https://ddfndelma2gpn.cloudfront.net/color/172/iPad_Pro_12.9_Inch_M2_space_gray.webp"
+      ],
       "specs": { "Display": "12.9-inch Liquid Retina XDR", "Chip": "Apple M2", "Storage": "128GB", "Connectivity": "Wi‑Fi" },
       "isFeatured": true
     },
@@ -81,7 +105,10 @@
       "salePrice": 59900,
       "categoryId": "cat-2",
       "stock": 9,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Tab+S9"],
+      "images": [
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F28519%2FSamsung-Galaxy-Tab-S9-5G-Beige-Price-in-Bangladesh.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F28520%2FSamsung-Galaxy-Tab-S9-5G-Graphite-Price-in-Bangladesh.png&w=1080&q=75"
+      ],
       "specs": { "Display": "11-inch Dynamic AMOLED 2X", "Chip": "Snapdragon 8 Gen 2", "Storage": "128GB", "Battery": "8400mAh" },
       "isLatest": true
     },
@@ -93,7 +120,12 @@
       "price": 42000,
       "categoryId": "cat-2",
       "stock": 11,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+Pad+6+Pro"],
+      "images": [
+        "https://www.mobiledokan.com/media/xiaomi-pad-6-pro-gold-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-pad-6-pro-front-image.webp",
+        "https://www.mobiledokan.com/media/xiaomi-pad-6-pro-back-side-image_1.webp",
+        "https://www.mobiledokan.com/media/xiaomi-pad-6-pro-side-image.webp"
+      ],
       "specs": { "Display": "11-inch 144Hz LCD", "Chip": "Snapdragon 8+ Gen 1", "Storage": "256GB", "Battery": "8600mAh" },
       "isBestSeller": true
     },
@@ -106,7 +138,12 @@
       "salePrice": 39900,
       "categoryId": "cat-3",
       "stock": 8,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Watch+Series+9"],
+      "images": [
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F19044%2FGold-Stainless-Steel-Case-with-Clay-Sport-Band.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F19048%2FGraphite-Stainless-Steel-Case-with-Graphite-Milanese-Loop.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F19052%2FMidnight-Aluminium-Case-with-Midnight-Sport-Band.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F19056%2FPink-Aluminium-Case-with-Light-Pink-Sport-Band.png&w=1080&q=75"
+      ],
       "specs": { "Display": "Always-On Retina", "Case": "45mm Aluminum", "Battery": "Up to 18 hours", "Sensors": "ECG, Blood Oxygen" },
       "isFeatured": true
     },
@@ -118,7 +155,11 @@
       "price": 32000,
       "categoryId": "cat-3",
       "stock": 13,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Watch+6"],
+      "images": [
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F53712%2FGalaxy-Watch6-Classic-price-in-bangladesh-astro.jpg&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F18720%2FGalaxy-Watch6-Classic-Black-(1).png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F18722%2FGalaxy-Watch6-Classic-Silver-(1).png&w=1080&q=75"
+      ],
       "specs": { "Display": "1.5-inch Super AMOLED", "Case": "47mm Stainless Steel", "Battery": "425mAh", "OS": "Wear OS" },
       "isLatest": true
     },
@@ -131,7 +172,11 @@
       "salePrice": 12900,
       "categoryId": "cat-3",
       "stock": 20,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+Watch+S3"],
+      "images": [
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F24256%2FXiaomi-Watch-S3-Price-in-Bangladesh-Black.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F24257%2FXiaomi-Watch-S3-Price-in-Bangladesh-Brown.png&w=1080&q=75",
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F24258%2FXiaomi-Watch-S3-Price-in-Bangladesh-Silver.png&w=1080&q=75"
+      ],
       "specs": { "Display": "1.43-inch AMOLED", "Battery": "Up to 15 days", "Water Resistance": "5ATM", "Sensors": "Heart Rate, SpO2" },
       "isBestSeller": true
     },
@@ -144,7 +189,12 @@
       "salePrice": 26400,
       "categoryId": "cat-4",
       "stock": 15,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Sony+WF-1000XM5"],
+      "images": [
+        "https://shop.rangs.com.bd/_next/image?url=https%3A%2F%2Fecom.rangs.com.bd%2Fstorage%2F10240%2F860X740-01.jpg&w=2048&q=75",
+        "https://shop.rangs.com.bd/_next/image?url=https%3A%2F%2Fecom.rangs.com.bd%2Fstorage%2F10241%2F860X740-02.jpg&w=2048&q=75",
+        "https://shop.rangs.com.bd/_next/image?url=https%3A%2F%2Fecom.rangs.com.bd%2Fstorage%2F10243%2F860X740-04.jpg&w=2048&q=75",
+        "https://shop.rangs.com.bd/_next/image?url=https%3A%2F%2Fecom.rangs.com.bd%2Fstorage%2F10242%2F860X740-03.jpg&w=2048&q=75"
+      ],
       "specs": { "Type": "True Wireless", "ANC": "Yes", "Battery": "Up to 24 hours with case", "Codec": "LDAC" },
       "isFeatured": true
     },
@@ -156,7 +206,11 @@
       "price": 32000,
       "categoryId": "cat-4",
       "stock": 10,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=AirPods+Pro+2"],
+      "images": [
+        "https://www.ryans.com/storage/products/main/apple-airpods-pro-2nd-gen-with-wireless-11681705811.webp",
+        "https://www.ryans.com/storage/products/main/apple-airpods-pro-2nd-gen-with-wireless-21681705811.webp",
+        "https://www.ryans.com/storage/products/main/apple-airpods-pro-2nd-gen-with-wireless-31681705812.webp"
+      ],
       "specs": { "Type": "True Wireless", "ANC": "Yes", "Battery": "Up to 30 hours with case", "Chip": "H2" },
       "isBestSeller": true
     },
@@ -169,7 +223,10 @@
       "salePrice": 16900,
       "categoryId": "cat-4",
       "stock": 17,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Galaxy+Buds2+Pro"],
+      "images": [
+        "https://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F15540%2FUntitled-design-(58).png&w=1080&q=75",
+        "http://dazzle.com.bd/_next/image?url=https%3A%2F%2Fdazzle.sgp1.cdn.digitaloceanspaces.com%2F15541%2FUntitled-design-(49).png&w=1080&q=75"
+      ],
       "specs": { "Type": "True Wireless", "ANC": "Yes", "Audio": "24-bit Hi-Fi", "Battery": "Up to 18 hours with case" },
       "isLatest": true
     },
@@ -181,7 +238,12 @@
       "price": 9500,
       "categoryId": "cat-4",
       "stock": 22,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=JBL+Tune+770NC"],
+      "images": [
+        "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw8a0bb30e/1.JBL_Tune_770NC_Product%20Image_Hero_White.png?sw=535&sh=535",
+        "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw0dbebfd6/2.JBL_Tune_770NC_Product%20Image_Front_White.png?sw=535&sh=535",
+        "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw7d0012c6/3.JBL_Tune_770NC_Product%20Image_Back_White.png?sw=535&sh=535",
+        "https://global.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9c0f1ba7/4.JBL_Tune_770NC_Product%20Image_Left_White.png?sw=535&sh=535"
+      ],
       "specs": { "Type": "Over-Ear", "ANC": "Yes", "Battery": "Up to 70 hours", "Connection": "Bluetooth 5.3" },
       "isBestSeller": true
     },
@@ -194,7 +256,10 @@
       "salePrice": 3990,
       "categoryId": "cat-5",
       "stock": 35,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Anker+65W+GaN"],
+      "images": [
+        "https://sheitech.com.bd/wp-content/uploads/2025/07/Anker-335-65W-Adapter-with-Type-C-to-Type-C-Cable.webp",
+        "https://sheitech.com.bd/wp-content/uploads/2025/07/Anker-335-65W-Adapter-with-Type-C-to-Type-C-Cable.webp"
+      ],
       "specs": { "Output": "65W", "Ports": "2x USB-C, 1x USB-A", "Technology": "GaN", "Plug": "UK" },
       "isFeatured": true
     },
@@ -206,7 +271,10 @@
       "price": 3500,
       "categoryId": "cat-5",
       "stock": 28,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Xiaomi+20000mAh"],
+      "images": [
+        "https://ddfndelma2gpn.cloudfront.net/color/2542/Xiaomi_20000mAh_33W_Power_Bank_with_Integrated_Cable_-_Tan.webp",
+        "https://ddfndelma2gpn.cloudfront.net/color/2542/Xiaomi_20000mAh_33W_Power_Bank_with_Integrated_Cable_-_Blue.webp"
+      ],
       "specs": { "Capacity": "20000mAh", "Output": "33W", "Ports": "USB-C, 2x USB-A", "Features": "Two-way fast charging" },
       "isLatest": true
     },
@@ -219,7 +287,11 @@
       "salePrice": 1990,
       "categoryId": "cat-5",
       "stock": 40,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Baseus+Mini+PB"],
+      "images": [
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/ppcxm10/ppcxm10-black-01-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/ppcxm10/ppcxm10-black-02-500x500.webp",
+        "https://www.startech.com.bd/image/cache/catalog/power-bank/baseus/ppcxm10/ppcxm10-black-03-500x500.webp"
+      ],
       "specs": { "Capacity": "10000mAh", "Output": "20W", "Ports": "USB-C", "Design": "Mini form factor" },
       "isBestSeller": true
     },
@@ -231,7 +303,12 @@
       "price": 1800,
       "categoryId": "cat-6",
       "stock": 55,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Spigen+S24+Case"],
+      "images": [
+        "https://spigen.com.bd/image/cache/catalog/S24/Ultra/Liquid%20Air/Liquid-Air-Case-for-Galaxy-S24-Ultra-600x600.jpg",
+        "https://spigen.com.bd/image/cache/catalog/S24/Ultra/Liquid%20Air/Spigen-Liquid-Air-Case-for-Galaxy-S24-Ultra-Price-in-Bangladesh-600x600.jpg",
+        "https://spigen.com.bd/image/cache/catalog/S24/Ultra/Liquid%20Air/Spigen-Liquid-Air-Case-for-Galaxy-S24-Ultra-600x600.jpg",
+        "https://spigen.com.bd/image/cache/catalog/S24/Ultra/Liquid%20Air/Liquid-Air-Case-for-Galaxy-S24-Ultra-Price-in-Bangladesh-600x600.jpg"
+      ],
       "specs": { "Compatibility": "Galaxy S24", "Material": "TPU + Polycarbonate", "Protection": "Air Cushion", "Finish": "Matte Black" },
       "isLatest": true
     },
@@ -244,7 +321,11 @@
       "salePrice": 690,
       "categoryId": "cat-6",
       "stock": 80,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Baseus+C-L+Cable"],
+      "images": [
+        "https://baseus.com.bd/wp-content/uploads/2026/03/baseus-3.webp",
+        "https://baseus.com.bd/wp-content/uploads/2026/03/baseus-100w-tung-1.webp",
+        "https://baseus.com.bd/wp-content/uploads/2026/03/baseus.webp"
+      ],
       "specs": { "Length": "1 meter", "Connector": "USB-C to Lightning", "Charging": "PD Fast Charging", "Build": "Braided" },
       "isBestSeller": true
     },
@@ -256,7 +337,12 @@
       "price": 2500,
       "categoryId": "cat-6",
       "stock": 38,
-      "images": ["https://placehold.co/400x500/0D1020/E8EEFF?text=Samsung+25W+Charger"],
+      "images": [
+        "https://images.samsung.com/is/image/samsung/p6pim/bd/ep-ta800nbegww/gallery/bd-wall-charger-for-super-fast-charging-25w-ep-ta800nbegww-467000631?$1164_776_PNG$",
+        "https://images.samsung.com/is/image/samsung/p6pim/bd/ep-ta800nbegww/gallery/bd-wall-charger-for-super-fast-charging-25w-ep-ta800nbegww-467000565?$Q90_1368_1094_F_JPG$",
+        "https://images.samsung.com/is/image/samsung/p6pim/bd/ep-ta800nbegww/gallery/bd-wall-charger-for-super-fast-charging-25w-ep-ta800nbegww-467000566?$Q90_1368_1094_F_JPG$",
+        "https://images.samsung.com/is/image/samsung/p6pim/bd/ep-ta800nbegww/gallery/bd-wall-charger-for-super-fast-charging-25w-ep-ta800nbegww-467000568?$Q90_1368_1094_F_JPG$"
+      ],
       "specs": { "Output": "25W", "Connector": "USB-C", "Compatibility": "Galaxy phones and tablets", "Type": "Wall Charger" },
       "isFeatured": true
     }
@@ -266,7 +352,7 @@
       "id": "banner-1",
       "title": "Upgrade Your Everyday Carry",
       "subtitle": "Premium phones, smartwatches, earbuds and accessories in one place.",
-      "imageUrl": "https://placehold.co/1200x500/05050F/E8EEFF?text=GadgetHub+Launch",
+      "imageUrl": "/stitch/smartphone_exchange_offer_banner_2_1.png",
       "linkUrl": "/products",
       "ctaLabel": "Shop All",
       "position": "hero-main",
@@ -278,7 +364,7 @@
       "id": "banner-2",
       "title": "Blue Week Gadget Deals",
       "subtitle": "Save on chargers, power banks and flagship audio picks.",
-      "imageUrl": "https://placehold.co/1200x500/0D1020/38BDF8?text=Blue+Week+Deals",
+      "imageUrl": "/stitch/smartphone_exchange_offer_banner_2_2.png",
       "linkUrl": "/products?filter=featured",
       "ctaLabel": "View Deals",
       "position": "hero-main",
@@ -290,7 +376,7 @@
       "id": "banner-3",
       "title": "Audio Essentials",
       "subtitle": "TWS, ANC and headphone picks for work and travel.",
-      "imageUrl": "https://placehold.co/400x240/10101E/E8EEFF?text=Audio+Essentials",
+      "imageUrl": "/stitch/smartphone_exchange_offer_banner_2_3.png",
       "linkUrl": "/products?category=cat-4",
       "ctaLabel": "Shop Audio",
       "position": "hero-side",
@@ -302,7 +388,7 @@
       "id": "banner-4",
       "title": "Power Up Anywhere",
       "subtitle": "Compact chargers and power banks for your daily kit.",
-      "imageUrl": "https://placehold.co/400x240/0EA5E9/04111E?text=Power+Up",
+      "imageUrl": "/stitch/smartphone_exchange_offer_banner_2_4.png",
       "linkUrl": "/products?category=cat-5",
       "ctaLabel": "Power Up",
       "position": "hero-side",
@@ -342,7 +428,7 @@
           "name": "Anker 65W GaN USB-C Charger",
           "price": 3990,
           "quantity": 1,
-          "image": "https://placehold.co/400x500/0D1020/E8EEFF?text=Anker+65W+GaN"
+          "image": "https://sheitech.com.bd/wp-content/uploads/2025/07/Anker-335-65W-Adapter-with-Type-C-to-Type-C-Cable.webp"
         }
       ],
       "subtotal": 3990,
